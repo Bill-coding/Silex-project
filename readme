@@ -1,0 +1,59 @@
+ , .                              *
+* :                               ,
+, *                             . , *
+, , *             # :             # , *
+: , :       . # @ @ + * @         , , *
+: , : +   @ + * . * + + * * +   # , . *
+,, : : # + * # * * + * + * * @ , , : #
+, , @ + : * # @ + : * + * * , , . + *
+# : * * * * . # + + * * * * , . : .
+ , * * * * @ + * * * * * * * # # *
+ + @ * * * @ + * + * * * * # # * #
+ , + # * * @ + * * * * * * * @ + *
+   . * : # W + * * * * @ # + + @
+      , # + . . . . : + * #
+
+
+-----------------------
+    Projet: Site sous le micro-framework PHP : Silex
+
+-----------------------
+
+Je suis:
+ - DRICHE Bilal
+ - H2 P2019
+
+Projet réalisé :
+Site autour de la série Vikings qui fournit le casting principal de la série
+ainsi que les résumé court de chaque épisode par série
+
+Fonctionnalités Front :
+- Design simple avec 3 couleurs principales (jaune, noir, bleu)
+- Utilisation du framework Materialize ( boutons, dropdown, cards)
+- Page 404 fun
+
+Fonctionnalités Back :
+ - Utilisation du micro-framework Silex
+ - Programmation Orientée Objet
+ - Utilisation de l'api The Movie Database pour obtenir les données necessaire : ( resumé, trailer, informations, etc.)
+ - Utilisation de plusieurs services dont twig pour le templating ou encore url Générator
+ - Contenus divers et variés sur la série, le casting avec routes simple et complexes
+ - Mise en cache des requête via le service HttpCacheServiceProvider => amélioration de la vitesse du site de 200ms de mon côté
+ - Gestion de array multidimensionel du model jusqu'au twig
+ - Responsive ( quelques petits soucis de responsive reste tout de même)
+
+
+
+Problèmes:
+ - Pour la gestion de certain contenu (dans getCasting par exemple) je ne pouvais pas boucler dans le tableau
+   et donc j'ai eu du code redondant.
+
+
+Rectification pour la V2 :
+- Générer certain contenu redondant des boucles
+- Améliorer vaguement le responsive
+- Gestion d'un compte utilisateur avec wishlist / plusieurs séries.
+
+Notes:
+ - Ce projet m'a appris énormément sur Silex et la POO
+  ( en partant de 0 sur la POO PHP et ce micro-framework)

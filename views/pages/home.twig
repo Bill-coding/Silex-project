@@ -1,0 +1,40 @@
+{{include('partials/header.twig')}}
+  <!--We display every information about Vikings,trailer etc and allow navigate on casting and season  -->
+<div class="bg">
+  <div class="mainContent">
+    <ul class='headerShow'>
+    <li><h1 class='title'>{{name}}</h1></li>
+    <li><span class='overlay tvshow'>{{number_of_seasons}} seasons</span></li>
+  </ul>
+  <ul class='infoShow'>
+    <li class='tvshow'>TV SHOW</li>
+    <li>{{episode_run_time}} min per episode &nbsp; |</li>
+    <li>{{genres0}},</li>
+    <li>{{genres1}}</li>
+  </ul>
+  <ul class='infoShow'>
+    <li>{{popularity|round(2, 'floor')}}/10 by tmdb</li>
+    <li>{{vote_average}}/10 by people</li>
+  </ul>
+  <p class='description'>{{overview}}</p>
+  </div>
+  <div class="selectSeason">
+    <!-- Dropdown Trigger -->
+    <a class='dropdown-button btn-large yellow darken-3 text-darken-3' href='#' data-activates='dropdown1'>Select Season</a>
+
+    <!-- Dropdown Structure -->
+    <ul id='dropdown1' class='dropdown-content'>
+      <li><a href="{{ url('season/1') }}">SEASON 1</a></li>
+    <li><a href="{{ url('season/2') }}">SEASON 2</a></li>
+      <li><a href="{{ url('season/3') }}">SEASON 3</a></li>
+      <li><a href="{{ url('season/4') }}">SEASON 4</a></li>
+    </ul>
+    <a class="btn-large yellow darken-3"href="{{ url('casting') }}">Show Cast</a>
+  </div>
+</div>
+
+  <div class='trailer'>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/{{trailerId}}" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+{{include('partials/footer.twig')}}

@@ -1,0 +1,184 @@
+{{include('partials/header.twig')}}
+<!--We display every character and profile path on a materialize card for season 2 -->
+<div class='bgAll'>
+<div class="bgSeason">
+</div>
+  <div class="selectSeason fixedWrapper">
+
+    <h2 class='nameS'>{{name}}</h2>
+    <!-- Dropdown Trigger -->
+    <a class='dropdown-button btn-large yellow darken-3 text-darken-3' href='#' data-activates='dropdown1'>Select Season</a>
+    <!-- Dropdown Structure -->
+    <ul id='dropdown1' class='dropdown-content'>
+      <li><a href="{{ url('season/1') }}">SEASON 1</a></li>
+    <li><a href="{{ url('season/2') }}">SEASON 2</a></li>
+      <li><a href="{{ url('season/3') }}">SEASON 3</a></li>
+      <li><a href="{{ url('season/4') }}">SEASON 4</a></li>
+    </ul>
+    <a class="btn-large yellow darken-3"href="{{ url('casting') }}">Show Cast</a>
+
+  <a href="https://www.facebook.com/Vikings/"><img class='fbIcon' src='{{app.request.basepath ~ '/src/images/fb.png'}}'/></a>
+      <a href="https://twitter.com/historyvikings"><img class='twitterIcon' src='{{app.request.basepath ~ '/src/images/twitter.png'}}'/></a>
+        <a  class='hashtag' href="https://twitter.com/hashtag/Vikings">#Vikings</a>
+      <a href="https://www.instagram.com/historyvikings/"><img class='instaIcon' src='{{app.request.basepath ~ '/src/images/insta.png'}}'/></a>
+  </div>
+<div class='row'>
+  <div class="col s5">
+    .
+  </div>
+  <div class='rightContent col s6'>
+          <div class="card big episodeContent">
+            <div class='popularityEP'>
+              {{S2voteEp1|round(2, 'floor')}}/10
+            </div>
+            <div class="card-image">
+              <img class='EPpath' src="http://image.tmdb.org/t/p/w1000/{{S2pathEp1}}">
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content overviewEP">
+              <p class='overviewLay'>{{S2overviewEp1}}.</p>
+            </div>
+            <div class="card-action black">
+              <h5 class='titleEP'>Saison 02 Episode 01 : {{S2nameEp1}}</h5>
+            </div>
+          </div>
+          <div class="card big episodeContent">
+            <div class='popularityEP'>
+              {{S2voteEp2|round(2, 'floor')}}/10
+            </div>
+            <div class="card-image">
+              <img class='EPpath' src="http://image.tmdb.org/t/p/w1000/{{S2pathEp2}}">
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content overviewEP">
+              <p class='overviewLay'>{{S2overviewEp2}}.</p>
+            </div>
+            <div class="card-action black">
+              <h5 class='titleEP'>Saison 02 Episode 02 : {{S2nameEp2}}</h5>
+            </div>
+          </div>
+          <div class="card big episodeContent">
+            <div class='popularityEP'>
+              {{S2voteEp3|round(2, 'floor')}}/10
+            </div>
+            <div class="card-image">
+              <img class='EPpath' src="http://image.tmdb.org/t/p/w1000/{{S2pathEp3}}">
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content overviewEP">
+              <p class='overviewLay'>{{S2overviewEp3}}.</p>
+            </div>
+            <div class="card-action black">
+              <h5 class='titleEP'>Saison 02 Episode 03 : {{S2nameEp3}}</h5>
+            </div>
+          </div>
+          <div class="card big episodeContent">
+            <div class='popularityEP'>
+              {{S2voteEp4|round(2, 'floor')}}/10
+            </div>
+            <div class="card-image">
+              <img class='EPpath' src="http://image.tmdb.org/t/p/w1000/{{S2pathEp4}}">
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content overviewEP">
+              <p class='overviewLay'>{{S2overviewEp4}}.</p>
+            </div>
+            <div class="card-action black">
+              <h5 class='titleEP'>Saison 02 Episode 04 : {{S2nameEp4}}</h5>
+            </div>
+          </div>
+          <div class="card big episodeContent">
+            <div class='popularityEP'>
+              {{S2voteEp5|round(2, 'floor')}}/10
+            </div>
+            <div class="card-image">
+              <img class='EPpath' src="http://image.tmdb.org/t/p/w1000/{{S2pathEp5}}">
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content overviewEP">
+              <p class='overviewLay'>{{S2overviewEp5}}.</p>
+            </div>
+            <div class="card-action black">
+              <h5 class='titleEP'>Saison 02 Episode 05 : {{S2nameEp5}}</h5>
+            </div>
+          </div>
+          <div class="card big episodeContent">
+            <div class='popularityEP'>
+              {{S2voteEp6|round(2, 'floor')}}/10
+            </div>
+            <div class="card-image">
+              <img class='EPpath' src="http://image.tmdb.org/t/p/w1000/{{S2pathEp6}}">
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content overviewEP">
+              <p class='overviewLay'>{{S2overviewEp6}}.</p>
+            </div>
+            <div class="card-action black">
+              <h5 class='titleEP'>Saison 02 Episode 06 : {{S2nameEp6}}</h5>
+            </div>
+          </div>
+          <div class="card big episodeContent">
+            <div class='popularityEP'>
+              {{S2voteEp7|round(2, 'floor')}}/10
+            </div>
+            <div class="card-image">
+              <img class='EPpath' src="http://image.tmdb.org/t/p/w1000/{{S2pathEp7}}">
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content overviewEP">
+              <p class='overviewLay'>{{S2overviewEp7}}.</p>
+            </div>
+            <div class="card-action black">
+              <h5 class='titleEP'>Saison 02 Episode 07 : {{S2nameEp7}}</h5>
+            </div>
+          </div>
+          <div class="card big episodeContent">
+            <div class='popularityEP'>
+              {{S2voteEp8|round(2, 'floor')}}/10
+            </div>
+            <div class="card-image">
+              <img class='EPpath' src="http://image.tmdb.org/t/p/w1000/{{S2pathEp8}}">
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content overviewEP">
+              <p class='overviewLay'>{{S2overviewEp8}}.</p>
+            </div>
+            <div class="card-action black">
+              <h5 class='titleEP'>Saison 02 Episode 08 : {{S2nameEp8}}</h5>
+            </div>
+          </div>
+          <div class="card big episodeContent">
+            <div class='popularityEP'>
+              {{S2voteEp9|round(2, 'floor')}}/10
+            </div>
+            <div class="card-image">
+              <img class='EPpath' src="http://image.tmdb.org/t/p/w1000/{{S2pathEp9}}">
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content overviewEP">
+              <p class='overviewLay'>{{S2overviewEp9}}.</p>
+            </div>
+            <div class="card-action black">
+              <h5 class='titleEP'>Saison 02 Episode 09 : {{S2nameEp9}}</h5>
+            </div>
+          </div>
+          <div class="card big episodeContent">
+            <div class='popularityEP'>
+              {{S2voteEp10|round(2, 'floor')}}/10
+            </div>
+            <div class="card-image">
+              <img class='EPpath' src="http://image.tmdb.org/t/p/w1000/{{S2pathEp10}}">
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content overviewEP">
+              <p class='overviewLay'>{{S2overviewEp10}}.</p>
+            </div>
+            <div class="card-action black">
+              <h5 class='titleEP'>Saison 02 Episode 10 : {{S2nameEp10}}</h5>
+            </div>
+          </div>
+<a href="{{ url('home') }}">Return home</a>
+  </div>
+</div>
+</div>
+{{include('partials/footer.twig')}}

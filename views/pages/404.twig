@@ -1,0 +1,15 @@
+{{include('partials/header.twig')}}
+
+<div class="bgError">
+<div class="page">
+  <header>
+  </header>
+  <div class="content">
+    <h1>404</h1>
+    <h2>Page not found</h2>
+    <a class='rHome' href="{{ url('home') }}"><p>Return home safely by clicking here</p></a>
+    <p>Be careful your lost in the forest</p>
+    <img src="{{app.request.basepath ~ '/src/images/bgError.jpg'}}" alt="" />
+</div>
+</div>
+{{include('partials/footer.twig')}}

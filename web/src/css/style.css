@@ -1,0 +1,35 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+/* */
+.bg{overflow:hidden;background-image: url("../images/vikingsaa.jpg");-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;background-attachment: fixed;background-position: center center;background-repeat: no-repeat;display:block;}
+.mainContent{color:#fff;font-family: 'Montserrat', sans-serif;padding:120px;}
+.headerShow li{display:inline-block;margin-left:50px;vertical-align: baseline;}
+.overlay{font-size:25px;}
+.tvshow{color:#f9a825;}
+.infoShow{margin-left:42px;}
+.infoShow li{display:inline-block;margin-left:10px;vertical-align: baseline;}
+.description{width:50%;text-indent:15px;padding:35px;}
+.selectSeason{padding-bottom:220px;margin-left:13%;margin-top:-140px;}
+.trailer{position:absolute;margin-top:-550px;margin-left:50%;}
+/* Casting page manage position and colors for the card  */
+.castPeople{position:absolute;z-index:1;}
+.castInfo{position:absolute;z-index:2;}
+.castPres{padding:50px;margin-left:10%;color:#f9a825;}
+.bgCast{position:absolute;width:100%;height:100%;background:#181818;}
+.bgAll{background:#181818;width:100%;height:100%;}
+.bgSeason{background-attachment:fixed;width:100%;height:750px;background-image: url("../images/Vikings.jpg");-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;background-position: center center;background-repeat: no-repeat;}
+.nameS{color:#fff;font-family: 'Montserrat', sans-serif;}
+/* Wrapper with dropdown to select season in fixed at the left with social icons */
+.fixedWrapper{margin-top:-300px;position:fixed;}
+.fbIcon{margin-top:200px;width:26px;height:auto;}
+.twitterIcon{margin-top:200px;margin-left:50px;width:26px;height:auto;}
+.instaIcon{margin-top:200px;margin-left:100px;width:26px;height:auto;}
+.hashtag:hover{color:#f9a825;}
+.hashtag{color:#989898;position:absolute;margin-left:150px;margin-top:41px;}
+
+/* Manage materialize Card content, colors, position to change the origin of the materialize card */
+.episodeContent{margin-top:100px;}
+.overviewEP{font-family: 'Montserrat', sans-serif;}
+.overviewEP{background:#f9a825;color:#000;width:100%;height:100%;}
+.EPpath{-webkit-filter: contrast(1);filter: contrast(1);z-index:5;top: 0;left: 0;right: 0;bottom: 0;margin: auto;min-width: 50%;min-height: 50%;overflow-x: hidden;}
+.titleEP{color:#fff;}
+.popularityEP{margin-left:92%;font-weight:bold;margin-top:-20px;color:#000;padding-top:24px;padding-left:9px;z-index:15;border-radius: 50%;width: 70px;background:#f9a825;height: 70px;position:absolute;}
